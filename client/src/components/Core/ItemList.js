@@ -17,6 +17,6 @@ const ItemList = ({ todos }) => {
 
 export default connect(
 	(store) => ({
-		todos: store.core.todos
+		todos: store.root.todos
 	})
 )(ItemList);

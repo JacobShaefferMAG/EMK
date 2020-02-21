@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '@material-ui/core/Button';
 import { TextField } from '@material-ui/core';
 import { connect } from 'react-redux';
-import { toggleButton, addTodo } from '../../redux/actions';
+import { toggleButton, addTodo } from '../../redux/modules/root';
 
 class AddItem extends React.Component {
 	constructor(props){
@@ -35,7 +35,7 @@ class AddItem extends React.Component {
 
 const mapStoreToProps = (store /*, ownProps*/) => {
 	return {
-		value: store.core.buttonState
+		value: store.root.buttonState
 	}
 };
 const mapDispatchToProps = { toggleButton, addTodo };

@@ -1,5 +1,13 @@
 import React from "react";
-import Core from './components/Core';
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route
+} from 'react-router-dom';
+
+import Home from './components/home';
+import Recipes from './components/recipes';
+import NavBar from "./components/common/NavBar";
 
 class App extends React.Component {
 	// constructor(props){
@@ -8,7 +16,17 @@ class App extends React.Component {
 
 	render() {
 		return (
-			<Core/>
+			<Router>
+				<NavBar/>
+				<Switch>
+					<Route path='/recipes'>
+						<Recipes/>
+					</Route>
+					<Route path='/'>
+						<Home/>
+					</Route>
+				</Switch>
+			</Router>
 		);
 	}
 }

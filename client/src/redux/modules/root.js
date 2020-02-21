@@ -1,13 +1,10 @@
-import { 
-	TOGGLE_BUTTON,
-	ADD_TODO
-} from '../actions/actionTypes';
+import initialStore from '../initialStore';
 
-const initialStore = {
-	buttonState: 'a',
-	todos: ['this is a test']
-};
+// Actions
+export const TOGGLE_BUTTON = 'TOGGLE_BUTTON';
+export const ADD_TODO = 'ADD_TODO';
 
+// Reducer
 export default function(store = initialStore, action){
 	switch (action.type){
 		case TOGGLE_BUTTON: {
@@ -28,3 +25,14 @@ export default function(store = initialStore, action){
 			return store;
 	}
 }
+
+// Action Creators
+export const toggleButton = () => ({type: TOGGLE_BUTTON});
+export const addTodo = (content) => ({
+	type: ADD_TODO,
+	payload: {
+		content
+	}
+})
+
+// Thunk Creators
