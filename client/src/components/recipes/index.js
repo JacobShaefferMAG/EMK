@@ -25,6 +25,26 @@ class Recipes extends React.Component {
 							</Card.Body>
 						</Card>
 					</Col>
+					<Col>
+						<Card>
+							<Card.Img variant="top"/>
+							<Card.Body>
+								<Card.Title>Card Title</Card.Title>
+								<Card.Text>Card Text</Card.Text>
+								<Button variant="primary">Go Somewhere</Button>
+							</Card.Body>
+						</Card>
+					</Col>
+					<Col>
+						<Card>
+							<Card.Img variant="top"/>
+							<Card.Body>
+								<Card.Title>Card Title</Card.Title>
+								<Card.Text>Card Text</Card.Text>
+								<Button variant="primary">Go Somewhere</Button>
+							</Card.Body>
+						</Card>
+					</Col>
 				</Row>
 
 			</Container>
