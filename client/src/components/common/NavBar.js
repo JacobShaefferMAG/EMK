@@ -3,6 +3,7 @@ import { IndexLinkContainer, LinkContainer } from 'react-router-bootstrap';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Button from 'react-bootstrap/Button';
 
 export default function NavBar(){
 	return (
@@ -21,8 +22,13 @@ export default function NavBar(){
 					</LinkContainer>
 				</Nav>
 				<Nav>
-					<Nav.Link>Account</Nav.Link>
-					<Nav.Link>Pantry</Nav.Link>
+					<LinkContainer to="#">
+						<Nav.Link>Login</Nav.Link>
+					</LinkContainer>
+					<LinkContainer to="#">
+						{/* <Nav.Link>Register</Nav.Link> */}
+						<Button variant="outline-warning">Register</Button>
+					</LinkContainer>
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
