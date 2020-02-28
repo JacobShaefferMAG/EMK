@@ -11,7 +11,8 @@ class Home extends React.Component {
 
 	render(){
 		return(
-			<Container>
+			// <Container>
+			<div>
 
 				<Row>
 					<Col>
@@ -39,7 +40,8 @@ class Home extends React.Component {
 					</Col>
 				</Row>
 
-			</Container>
+			</div>
+			// </Container>
 		);
 	}
 }

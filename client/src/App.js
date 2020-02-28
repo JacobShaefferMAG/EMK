@@ -8,6 +8,7 @@ import {
 import Home from './components/home';
 import Recipes from './components/recipes';
 import NavBar from "./components/common/NavBar";
+import Container from "react-bootstrap/Container";
 
 class App extends React.Component {
 	// constructor(props){
@@ -17,15 +18,19 @@ class App extends React.Component {
 	render() {
 		return (
 			<Router>
-				<NavBar/>
-				<Switch>
-					<Route path='/recipes'>
-						<Recipes/>
-					</Route>
-					<Route path='/'>
-						<Home/>
-					</Route>
-				</Switch>
+				<Container>
+
+					<NavBar/>
+					<Switch>
+						<Route path='/recipes'>
+							<Recipes/>
+						</Route>
+						<Route path='/'>
+							<Home/>
+						</Route>
+					</Switch>
+
+				</Container>
 			</Router>
 		);
 	}

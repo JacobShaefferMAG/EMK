@@ -7,7 +7,8 @@ import Button from 'react-bootstrap/Button';
 
 export default function NavBar(){
 	return (
-		<Navbar bg="dark" variant="dark" expand="lg">
+		// <Navbar bg="dark" variant="dark" expand="lg">
+		<Navbar expand="lg">
 			<LinkContainer to="/">
 				<Navbar.Brand>EMK</Navbar.Brand>
 			</LinkContainer>
@@ -27,7 +28,8 @@ export default function NavBar(){
 					</LinkContainer>
 					<LinkContainer to="#">
 						{/* <Nav.Link>Register</Nav.Link> */}
-						<Button variant="outline-warning">Register</Button>
+						{/* <Button variant="outline-warning">Register</Button> */}
+						<Button variant="outline-primary">Register</Button>
 					</LinkContainer>
 				</Nav>
 			</Navbar.Collapse>
